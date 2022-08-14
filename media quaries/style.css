@@ -1,0 +1,40 @@
+.box {
+    font-size: 55px;
+    text-align: center;
+    background-color: aquamarine;
+    color: blue;
+    font-weight: lighter;
+    height: min-content;
+    margin: aut2.5px;
+
+}
+
+@media (max-width:300px) {
+    #box-1 {
+        display: block;
+        background-color: cyan;
+    }
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    #box-2 {
+        display: block;
+        background-color: yellow;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:900px) {
+    #box-3 {
+        display: block;
+        background-color: rgb(158, 147, 147);
+    }
+}
+
+@media (min-width:300px) and (max-width:1200px) {
+    #box-4 {
+        display: block;
+        background-color: blueviolet;
+
+    }
+}

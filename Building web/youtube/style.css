@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #f0e8e8;
+}
+
+img {
+    cursor: pointer;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    background-color: #ada5a5;
+    height: 65px;
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.nav-left img {
+    margin-right: 2px;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-left .menu-icon {
+    height: 34px;
+
+}
+
+.nav-left .logo {
+    height: 55px;
+    width: 115px;
+}
+
+.nav-middle .mic-icon {
+    width: 16px;
+    margin-left: 10px;
+}
+
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    height: 35px;
+}
+
+
+.nav-middle .search-box input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+
+}
+
+
+
+
+/*-----------sidebar---------------- */
+
+.sidebar {
+    background: rgb(173, 171, 171);
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 3%;
+    padding-top: 80px;
+    margin-top: 50px;
+}
+
+.shortcut-link a img {
+    width: 20px;
+    margin-right: 20px;
+    margin-left: -15px;
+}
+
+.shortcut-link a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+
+.More-from-Youtube h3 {
+    font-size: 15px;
+    margin: 15px;
+
+}
+
+#h3 {
+    width: 10px;
+    height: 25px;
+}
+
+.More-from-Youtube a {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+
+.More-from-Youtube a img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.small-sidebar {
+    width: 5%;
+}
+
+.small-sidebar a p {
+    display: none;
+}
+
+.small-sidebar h3 {
+    display: none;
+}
+
+
+/* -------------- main content-----------------*/
+
+.container {
+    background: #f9f9f9;
+    padding-left: 15%;
+    padding-right: 1%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.large-container {
+    padding-left: 7%;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.vid-list thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vid-list .flex-div {
+    align-items: flex-start;
+    margin-top: 7px;
+
+}
+
+.vid-list .flex-div img {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.flex-div img {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 12px;
+    margin-left: 2px;
+}
+
+.vid-info {
+    color: #413b3b;
+    font-size: 13px;
+}
+
+.vid-info a {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.vid-list1 {
+    overflow: hidden;
+}
+
+.vid-list2 {
+    overflow: hidden;
+}
+
+.vid-list3 {
+    overflow: hidden;
+}
+
+.vid-list4 {
+    overflow: hidden;
+}
+
+.vid-list5 {
+    overflow: hidden;
+}
+
+.vid-list6 {
+    overflow: hidden;
+}
+
+.vid-list7 {
+    overflow: hidden;
+}
+
+.vid-list8 {
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 900px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .nav-left img {
+        display: none;
+    }
+
+    .nav-right .user-icon {
+        display: block;
+        width: 30px;
+    }
+
+    .nav-middle .search-box input {
+        width: 100px;
+    }
+
+    .nav-middle .mic-icon {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}

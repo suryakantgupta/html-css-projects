@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background: url('images/burger.jpg');
+    background-size: cover;
+    height: 93vh;
+
+}
+
+
+.box {
+    width: 900px;
+    float: right;
+    border: none;
+}
+
+.box ul div {
+    width: 120px;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.box ul div a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.box ul div:hover {
+    background-color: green;
+}
+
+.box ul div a:hover {
+    color: whitesmoke;
+}
+
+.search-box {
+    margin-top: 2px;
+    float: right;
+    margin-right: 15px;
+    position: relative;
+}
+
+input[type="text"] {
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.wd {
+    width: 450px;
+    height: 715px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 55px;
+}
+
+.wd h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+    color: chartreuse;
+}
+
+
+.wd h4 {
+    text-align: justify;
+    color: darkgray;
+    font-weight: normal;
+}
+
+.wd h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 40px auto;
+    color: greenyellow;
+}
+
+.opt form,
+input[type="button"] {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: -14px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+
+form,
+input[type="button"]:hover {
+    background-color: green;
+}
+
+.sticky-footer {
+
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: black;
+
+}
+
+
+.sticky-footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: chartreuse;
+}
+
+.sticky-footer p {
+    text-align: center;
+    color: forestgreen;
+}
+
+hr {
+    border-bottom: 1px solid rgb(6, 241, 6);
+}

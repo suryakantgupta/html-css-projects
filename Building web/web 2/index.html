@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving People from flooding region</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="website.html">
+                    <h1>Neptune</h1>
+                    <img src="neptune1.png">
+                </a>
+                <!------place for logo and img---------->
+            </div>
+            <nav>
+                <div class="cot"><a>HOME</a></div>
+                <div class="cot"><a>ACHIVEMENT</a></div>
+                <div class="cot"><a>GALLERY</a></div>
+                <div class="cot"><a>SUPPORT US</a></div>
+                <div class="cot"><a>CONTACT US</a></div>
+
+            </nav>
+
+            <!----------------------navigation bar finish------------------------->
+        </div>
+
+        <div id="login-form" class="login-page">
+
+            <!---------creating the form box-------------------------->
+
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">log In</button>
+                    <button type="button" onclick="Register()" class="toggle-btn">Register</button>
+                </div>
+
+                <!-------------creating -----login------form--------------------------------------------->
+
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember password</span><button type="submit"
+                        class="submit-btn">Log in</button>
+                </form>
+
+                <!---------------creating-----registration-----form---------------------------------------->
+
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

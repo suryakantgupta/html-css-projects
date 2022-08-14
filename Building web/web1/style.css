@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(images/web33.jpg), linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.8)50%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-logo {
+    width: 85px;
+    height: 80px;
+}
+
+
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+ul li a:hover {
+    color: #adff2f;
+}
+
+
+.content {
+    text-align: center;
+    padding-left: 550px;
+}
+
+.content h1 {
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600px;
+    mix-blend-mode: overlay;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color-scheme: rgb(109, 82, 82);
+    font-size: 24px;
+    border: 2px solid rgb(139, 129, 129);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: lightyellow;
+}
+
+.footer {
+    background-color: cyan;
+}
+
+.inner-footer {
+    margin: 0;
+    padding: 0;
+    color: #272727;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-items {
+    list-style: none;
+}
+
+.social-items a {
+    padding: 10px 20px;
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+
+}
+
+
+.quick-links {
+    display: flex;
+}
+
+
+.quick-links ul {
+    display: flex;
+}
+
+.quick-items {
+    list-style: none;
+}
+
+.quick-items a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+    color: black;
+}
+
+.outer-footer {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    background-color: grey;
+}
