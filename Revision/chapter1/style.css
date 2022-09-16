@@ -1,3 +1,55 @@
-.body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    background: grey;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    gap: 16px;
+}
+
+.logo i {
+    color: orange;
+}
+
+.logo i a {
+    display: inline;
+    font-size: 25px;
+}
+
+.logo strong {
+    font-size: 20px;
+}
+
+.nav-container ul {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    margin-right: 16px;
+    gap: 30px;
+
+}
+
+.nav-container ul div {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 18px;
+}
+
+
+.nav-container ul div:hover {
+    color: chocolate;
 }
