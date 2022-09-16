@@ -567,8 +567,6 @@ header {
 
 
 
-
-
     .about-text {
         text-align: center;
     }
@@ -589,8 +587,6 @@ header {
 
 
 
-
-
     .login-image {
         display: none;
     }
@@ -599,7 +595,6 @@ header {
         justify-content: center;
         grid-template-columns: 1fr;
     }
-
 
 
 
@@ -620,7 +615,6 @@ header {
     .newsletter h2 {
         font-size: 2rem;
     }
-
 
 
 
