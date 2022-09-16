@@ -252,19 +252,6 @@ console.log(a); // ['dog', 'cat', 'hen', empty × 97, 'fox']
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // the escape character are like this
 var mystr = "I am Game \"double layer\" hard level \" standard level\"";
 console.log(mystr);
