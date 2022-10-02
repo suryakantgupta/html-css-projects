@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+:root {
+  --primary-color: #000839;
+  --primary-shades: #00020b;
+  --para-color: #80849c;
+  --helper-color: #1264fa;
+  --white: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-link {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(226, 75, 21);
+}
+
+.para {
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--para-color);
+}
+
+/* --------------------------------------- 
+header and navbar style start  
+-------------------------------------------*/
+
+.header {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 54px;
+  position: relative;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.tree {
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-size: 15px;
+}
+
+.navbar-list .navbar-btn {
+  padding: 12px 24px;
+  background-color: whitesmoke;
+  border: 1px solid rgb(184, 178, 178);
+  color: orangered;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.navbar-list .navbar-link:hover,
+.navbar-list .navbar-link:active {
+  color: orangered;
+}
+
+.navbar-btn:hover,
+.navbar-btn:active {
+  background-color: rgb(245, 193, 175);
+  color: #00020b;
+}
+
+.navbar-link {
+  text-transform: uppercase;
+}
+
+.mobile-nav-icon {
+  font-size: 40px;
+  color: orangered;
+}
+
+.mobile-navbar-btn {
+  display: none;
+}
+
+.mobile-nav-icon [name="close"] {
+  display: none;
+}
+
+/* reuseable code */
+
+.image {
+  display: inline-block;
+  width: 100%;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.grid {
+  display: grid;
+  gap: 96px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 16px 32px;
+  border-radius: 100px;
+  background-color: orangered;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.05);
+}
+
+/* --------------------------------------- 
+hero section style start  
+-------------------------------------------*/
+
+.section-hero {
+  position: relative;
+}
+
+/* .section-hero::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 96px;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    background: #1264fa;
+    z-index: -1;
+} */
+
+.primary-heading {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section-hero .para {
+  margin-top: 12px;
+  margin-bottom: 14px;
+  color: #00020b;
+}
+
+.hero-icons {
+  margin-top: 42px;
+}
+
+.hero-icons .icon {
+  font-size: 60px;
+  position: relative;
+}
+
+/* .hero-icons .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    background-color: orangered;
+    border-radius: 50%;
+    opacity: 0.7;
+} */
+
+/* above this only for circle in icons of message and introduction */
+
+.para1 {
+  font-size: 18px;
+}
+
+.hero-icons h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.section-hero .hero-icons-style .para {
+  line-height: 16;
+  font-size: 14px;
+  margin: 0;
+}
+
+.hero-image {
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero-image img {
+  height: 85%;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero-img-overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(235, 107, 61);
+  height: -10%;
+  padding: 6px;
+}
+
+.hero-img-overlay .para:nth-child(2) {
+  margin: 0;
+  color: #00020b;
+}
+
+/*--------------------------
+media queries style start
+--------------------------*/
+
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 96px;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width: 980px) {
+    .container {
+        max-width: 96rem;
+    }
+
+    .section-hero .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero .hero-icons .grid-two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+    }
+
+    .navbar .navbar-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .navbar .navbar-link {
+        color: whitesmoke;
+    }
+
+
+    .mobile-navbar-btn {
+        display: block;
+    }
+
+
+    .active .navbar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+        display: block;
+        color: whitesmoke;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name = "menu"] {
+        display: none;
+        color: whitesmoke;
+    }
+
+
+    .hero-image .hero-img-overlay {
+        width: 80%;
+        left: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

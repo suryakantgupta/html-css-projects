@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React lifecycle method</title>
+  </head>
+
+  <body>
+
+    <h2 style="background-color: dodgerblue">(1) Mounting</h2>
+    <p>
+      when an instance of a component is being created and inserted into the DOM
+    </p>
+    <p>
+      Mounting phases methods => constructor, static getDerivedStateFromProps,
+      render and componentDidMount
+    </p>
+
+
+    <h3 style="background-color: lightgreen">(i)constructor(props)</h3>
+    <ul>
+      <li>
+        A special function that will get called whenever a new component is
+        created
+      </li>
+      <li>initializing state , Binding the event handlers</li>
+      <li>Do not cause side effects. example - HTTP Requests</li>
+    </ul>
+
+
+    <h4 style="background-color: lightgreen">Defying your own constructor</h4>
+    <ul>
+      <li>super(props) Directly overwrite this.state</li>
+    </ul>
+
+
+
+    <h4 style="background-color: lightgreen">
+      (ii) static getDerivedStateFromProps(state, props)
+    </h4>
+    
+    <ul>
+      <li>
+        the react documentation classifies this method as a rarely used
+        lifecycle method. it's only used
+        <b
+          >when state of the component depends on changes of props over time.</b
+        >
+        such a scenario you can use this method to
+        <strong>Set the state</strong>.
+      </li>
+      <li>Do not cause side effects. example - HTTP Requests</li>
+    </ul>
+
+
+
+    <h2 style="background-color: lightgreen">(iii) render()</h2>
+    <ul>
+      <li>
+        only required method
+        <br />
+        Read props & state and return JSX
+      </li>
+      <li>Do not change state or interact with DOM or make ajax calls.</li>
+      <li>
+        Since it is the render method JSX which also contain the other children
+        components right after the parent render method the
+        <b>children components lifecycle methods are also executed.</b>
+      </li>
+    </ul>
+
+
+
+    <h3 style="background-color: lightgreen">(iv) componentDidMount</h3>
+    <ul>
+      <li>
+        This method will be called only once in the whole lifecycle of a given
+        component and it is invoked immediately after a component and all its
+        children component have been rendered to the DOM.
+      </li>
+      <li>
+        perfect place for cause side effects. example- interact with the DOM or
+        perform any ajax calls to load data.
+      </li>
+    </ul>
+
+
+
+
+    <hr />
+    <h2 style="background-color: tomato">(2) Updating</h2>
+    <p>
+      When a component is being re-rendered as a result of a changes to either
+      its props or state
+    </p>
+    <p>
+      Updating phases methods => static getDerivedStateFromProps,
+      shouldComponentUpdate, render, getSnapshotsBeforeUpdate and
+      componentDidUpdate
+    </p>
+
+
+    <h3 style="background-color: lightgreen">
+      (i) static getDerivedStateFromProps(props, state) method
+    </h3>
+    <ul>
+      <li>Method is called every time a component is re-rendered</li>
+      <li>Set the state</li>
+      <li>
+        Do not cause side effects. HTTP Requests( and get the odd state from
+        props)
+      </li>
+    </ul>
+
+
+
+    <h3 style="background-color: lightgreen">
+      (ii) shouldComponentUpdate(nextProps, nextState) method
+    </h3>
+    <ul>
+      <li>Dictates if the component should re-render or not</li>
+      <li>Performance optimization</li>
+      <li>
+        Do not cause side effects. Ex: HTTP requests calling the setState method
+      </li>
+    </ul>
+
+
+
+    <h3 style="background-color: lightgreen">(iii) render() method</h3>
+    <ul>
+      <li>Only required method</li>
+      <li>Read props & state and return JSX</li>
+      <li>Do not change state or interact with DOM or make ajax calls.</li>
+    </ul>
+
+
+
+    <h3 style="background-color: lightgreen">
+      (iv) getSnapshotsBeforeUpdate(prevProps, prevState, snapShot) method
+    </h3>
+    <ul>
+      <li>
+        Called right before the changes from the virtual Dom are to be reflected
+        in the DOM
+      </li>
+      <li>Capture some information from the DOM</li>
+      <li>
+        Method will either return null or return a value. returned value will be
+        passed as the third parameter to the next method.
+      </li>
+    </ul>
+
+    <h3 style="background-color: lightgreen">(v) componentDidUpdate(prevProps, prevState, snapShot)</h3>
+    <ul>
+      <li>This method called (only once )after the render is finished in the re-render cycles.</li>
+      <li>Cause side effects</li>
+    </ul>
+
+
+
+    <hr />
+    <h2 style="background-color: grey">(3) Unmounting</h2>
+    <p>when a component is begin removed from the DOM</p>
+    <p>Unmounting phases method => componentWillUnmounting</p>
+
+    <h3 style="background-color: lightgreen">(i) componentWillUnmount</h3>
+    <ul>
+      <li>Method is invoked immediately before a component is unmounted and destroyed.</li>
+      <li>Cancelling any network requests, removing event handlers, 
+        cancelling any subscriptions and also invalidating timers
+      </li>
+      <li>Do not call setState method</li>
+    </ul>
+
+    
+
+    <hr />
+    <h2 style="background-color: mediumseagreen">(4) Error handling</h2>
+    <p>
+      when there is an error during rendering , in a lifecycle method or in the
+      constructor of any child component
+    </p>
+    <p>
+      Error handling phases methods => static getDerivedStateFromError and
+      componentDidCatch
+    </p>
+
+    <h3 style="background-color: lightgreen">(i) static getDerivedStateFromError(error)</h3>
+    <h3 style="background-color: lightgreen">(ii) componentDidCatch(error, info)</h3>
+    <p>in both these method , When there is an error either during rendering, in a lifecycle method, or 
+      in the constructor of any chid component.
+    </p>
+
+
+  </body>
+</html>
