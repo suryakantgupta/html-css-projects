@@ -6,130 +6,131 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
+
+body{
+    font: 24px "Poppins", sans-serif;
     min-height: 100vh;
+    background-color: dodgerblue;
+    background-image: radial-gradient(white, dodgerblue);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, rgba(189, 182, 182, 0.795)50%, rgba(167, 163, 163, 0.795)50%), url('images/iota.jpg');
-}
-
-.container {
-    width: 360px;
-    height: 400px;
-    border: 1px solid #18e320;
-    padding: 20px 30px;
-}
-
-.top p {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #f39e22;
-}
-
-.form div {
-    margin: 35px 0;
-    position: relative;
-    width: 280px;
+    flex-direction: column;
 }
 
 
-.form div input {
-    width: 80%;
-    height: 40px;
-    padding: 10px 20px;
-    font-size: 10px;
-    border-radius: 15px;
-    border: 2px solid #0ff;
-    background: transparent;
-    color: #fff;
-}
-
-.form div input:focus {
-    outline: 1px solid #0ff;
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
 }
 
 
-.form div label {
-    position: absolute;
-    pointer-events: none;
+header, footer {
+    position: sticky;
+    background-color: #1E293B;
+    color: whitesmoke;
+}
+
+
+header{
     top: 0;
-    left: 15px;
-    font-size: 18px;
-    padding: 10px;
-    color: #0ff;
-    transition: .2s;
-}
-
-.form div input:focus~label,
-.form div input:focus~label {
-    color: #0ff;
-    font-size: 14px;
-    font-weight: 600px;
-    letter-spacing: 1px;
-    top: -13px;
-    left: 30px;
-    padding: 2px 5px;
-    background: rgba(33, 37, 43);
 }
 
 
-.btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background: rgba(33, 37, 43);
-    color: #fff;
-    border: 2px solid #0ff;
-    cursor: pointer;
-}
-
-
-.button1 {
-    font-size: 16px;
-    padding: 0px 20px;
-    border-radius: 20px;
-    background: rgba(33, 37, 43);
-    color: #fff;
-    border: 2px solid #0ff;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #0ff;
+nav {
+    background-color: #fff;
     color: #000;
+    padding: 8px;
+    border-bottom: 2px solid #000;
 }
 
 
-.forgot {
-    color: #fff;
-    font-size: 16px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: .3s;
-    width: fit-content;
-}
-
-.forgot:hover {
-    color: #0ff;
+main {
+    flex-grow: 1;
 }
 
 
-.newUser {
-    color: #fff;
-    font-size: 14px;
+footer {
+    bottom: 0;
 }
 
-.newUser span {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 18px;
-    color: #0ff;
-    cursor: pointer;
-    transition: .3s;
+
+/* || small */
+
+/* @media (min-width: 576px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(white, green);
+    }
+
+    nav {
+        display: none;
+    }
+    
+} */
+
+
+/* || Medium */
+
+@media (min-width: 768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(white, gold);
+    }
 }
 
-.newUser span:hover {
-    transform: scale(1.15);
+
+/* || large */
+
+@media (min-width: 992px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(white, firebrick);
+    }
 }
+
+
+/* || XL */
+
+@media (min-width: 768px) {
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(white, rebeccapurple);
+    }
+}
+
+
+
+/* || MOBILE DEVICE LANDSCAPE     */
+@media (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: tomato;
+        background-image: radial-gradient(white, tomato);
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

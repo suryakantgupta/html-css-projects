@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('flood.jpg');
+}
+
 .full-page {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(99, 95, 95, 0.5)50%, rgba(77, 74, 74, 0.5)50%), url(flood.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -212,7 +215,10 @@ span {
 }
 
 
-@media(max-width: 1200px){
+@media(max-width: 780px){
+    .full-page {
+        
+    }
     
 }
 
