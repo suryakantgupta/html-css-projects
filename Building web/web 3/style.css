@@ -57,7 +57,7 @@ footer {
 
 /* || small */
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
     body {
         background-color: green;
         background-image: radial-gradient(white, green);
@@ -67,7 +67,7 @@ footer {
         display: none;
     }
     
-} */
+}
 
 
 /* || Medium */
@@ -92,7 +92,7 @@ footer {
 
 /* || XL */
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     body {
         background-color: rebeccapurple;
         background-image: radial-gradient(white, rebeccapurple);
