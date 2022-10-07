@@ -1,19 +1,70 @@
-h2 {
-    background-color: aquamarine;
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-p {
-    background-color: bisque;
-    color: blue;
+body {
+    font-family: 'Poppins' sans-serif;
 }
 
-h3 {
-    background-color: darkgray;
-    color: crimson;
+
+header {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;    
 }
 
-h4 {
-    background-color: violet;
-    color: goldenrod;
+.logo-container,
+.nav-links,
+.cart {
+    display: flex;
 }
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+
+.nav-links {
+    justify-content: space-around;
+    color: #5f5f79;
+    font-size: 18px;
+
+}
+
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  
+  flex: 2;
+}
+
+.cart {
+   flex: 1;
+   justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
